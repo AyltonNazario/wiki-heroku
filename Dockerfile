@@ -1,4 +1,5 @@
-FROM ayltonnazario/wiki:2
+FROM requarks/wiki:2
+COPY master.js /wiki/server/master.js
 WORKDIR /wiki
 ENV DB_TYPE postgres
 ENV DB_SSL 1
